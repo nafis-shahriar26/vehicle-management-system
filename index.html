@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyRent Vehicle Rental</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Easy<span>Rent</span></h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#booking">Booking</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h2>Find a vehicle for your next trip</h2>
+      <p>Choose a vehicle, pick your dates, and send a booking request.</p>
+      <a class="button" href="#vehicles">See vehicles</a>
+    </section>
+
+    <section class="section" id="vehicles">
+      <h2>Available Vehicles</h2>
+      <p class="section-intro">Select a vehicle to start your booking.</p>
+      <div id="vehicle-list" class="vehicle-list"></div>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <h2>Request a Booking</h2>
+
+      <form id="booking-form">
+        <label for="customer-name">Your name</label>
+        <input id="customer-name" type="text" required>
+
+        <label for="customer-phone">Phone number</label>
+        <input id="customer-phone" type="tel" required>
+
+        <label for="vehicle-choice">Vehicle</label>
+        <select id="vehicle-choice" required>
+          <option value="">Choose a vehicle</option>
+        </select>
+
+        <div class="date-row">
+          <div>
+            <label for="start-date">Pickup date</label>
+            <input id="start-date" type="date" required>
+          </div>
+
+          <div>
+            <label for="end-date">Return date</label>
+            <input id="end-date" type="date" required>
+          </div>
+        </div>
+
+        <button class="button" type="submit">Send booking request</button>
+        <p id="booking-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>EasyRent Vehicle Rental · Student project</p>
+  </footer>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
