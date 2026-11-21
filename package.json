@@ -1,0 +1,12 @@
+{
+  "name": "vehicle-management-system(2)",
+  "version": "1.0.0",
+  "description": "A beginner vehicle rental management project",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^45.4.1"
+  }
+}
